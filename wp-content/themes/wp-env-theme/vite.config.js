@@ -40,7 +40,7 @@ export default defineConfig({
         rollupOptions: {
             input: path.resolve(__dirname, 'assets/src/js/main.js'),
             output: {
-                entryFileNames: 'main.js',
+                entryFileNames: 'main.[hash].js',
 
                 assetFileNames: ({ name }) => {
                     const ext = name.split('.').pop();
@@ -54,11 +54,12 @@ export default defineConfig({
                     }
 
                     if (/css/.test(ext)) {
-                        return 'style.css';
+                        return 'style.[hash].css';
                     }
 
-                    return '[name][ext]';
+                    return '[name].[hash].[ext]';
                 },
+                
             },
         },
     },

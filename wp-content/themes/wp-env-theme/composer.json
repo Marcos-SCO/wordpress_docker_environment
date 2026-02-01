@@ -1,0 +1,15 @@
+{
+    "name": "marcos/wp-env-theme",
+    "autoload": {
+        "psr-4": {
+            "Functions\\": "functions/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marcos-sco",
+            "email": "marcos_sco@outlook.com"
+        }
+    ],
+    "require": {}
+}
