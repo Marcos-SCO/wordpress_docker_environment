@@ -1,0 +1,6 @@
+/uploads
+
+# Ignore all plugins
+/plugins/*
+# Allow specific plugins (exceptions)
+!/plugins/custom-plugin/
