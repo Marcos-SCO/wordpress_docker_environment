@@ -1,6 +1,8 @@
 /*
 Theme Name: Wp environment Theme
 Author: Marcos-SCO
-Description: WordPress Theme for Docker Development Environment
+Author URI: https://github.com/Marcos-SCO
+Requires PHP: 8.x
+Description: A Docker based WordPress local development environment to quickly run a full WordPress stack using containers, ideal for theme and plugin development, testing, and consistent setups across machines.
 Version: 1.0
 */
