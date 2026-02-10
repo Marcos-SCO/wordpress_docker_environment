@@ -1,4 +1,9 @@
-FROM wordpress:6.9.0-fpm-alpine
+FROM wordpress:6.9.1-php8.4-fpm-alpine
+# FROM wordpress:fpm-alpine
+# FROM wordpress:6.9.1-fpm-alpine
+
+# Enable OPcache extension
+RUN docker-php-ext-install opcache
 
 # Make PHP-FPM listen on TCP 9000
 RUN sed -i 's|^listen = .*|listen = 0.0.0.0:9000|' /usr/local/etc/php-fpm.d/www.conf
